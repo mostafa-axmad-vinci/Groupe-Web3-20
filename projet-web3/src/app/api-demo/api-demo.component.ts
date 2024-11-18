@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-api-demo',
   standalone: true,
   imports: [],
-  templateUrl: './api-demo.component.html',
+  template: '<h1>Ici explication comment ca fonctionne zebi</h1>',
   styleUrl: './api-demo.component.css'
 })
 export class ApiDemoComponent {

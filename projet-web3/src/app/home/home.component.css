@@ -1,0 +1,5 @@
+.accordion-collapse.show {
+    background-color: #6c757d; /* Couleur grise */
+    color: #fff; /* Couleur du texte en blanc pour le contraste */
+  }
+  
