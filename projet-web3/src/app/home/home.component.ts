@@ -5,86 +5,90 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content text-center text-white">
-      <h1 class="display-3 text-gradient">Bienvenue sur Angular Explorer</h1>
-      <p class="lead mt-3">Découvrez comment Angular peut transformer vos projets web en chefs-d'œuvre modernes et performants.</p>
+      <h1 class="display-3">Explorer Angular</h1>
+      <p class="lead mt-3">Transformez vos projets web avec un framework puissant et moderne.</p>
     </div>
   </section>
 
-  <div class="container mt-5 p-5 rounded shadow-lg bg-light">
-    <h2 class="text-center mb-4 display-5 text-primary">Foire Aux Questions</h2>
-    <div class="accordion mt-5" id="angularQuestions">
-      <!-- Question 1 -->
-      <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            <i class="bi bi-question-circle-fill me-2"></i> Quels sont les cas d'utilisation de la techno ?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#angularQuestions">
-          <div class="accordion-body">
-            Angular est idéal pour les ERP, CRM, applications à page unique (SPA), et Progressive Web Apps (PWA). Ses fonctionnalités avancées rendent les projets complexes plus faciles à gérer.
-          </div>
+  <!-- Pourquoi Angular Section -->
+  <div class="section-white text-center p-5">
+    <h2 class="display-5 text-primary">Pourquoi Angular ?</h2>
+    <p class="mt-3 lead">Angular offre une structure solide et des outils avancés pour développer des applications web performantes.</p>
+    <div class="divider mx-auto my-4"></div>
+    <p>Ses fonctionnalités robustes, sa communauté active et sa prise en charge de TypeScript en font un choix idéal pour les développeurs.</p>
+  </div>
+
+  <!-- Concepts Principaux Section -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4 display-5 text-secondary">Concepts Principaux</h2>
+    <div class="row g-4 text-center">
+      <!-- Bloc 1 -->
+      <div class="col-md-4">
+        <div class="concept-block p-4 rounded shadow">
+          <i class="bi bi-columns-gap icon-large"></i>
+          <h3 class="text-primary mt-3">Composants</h3>
+          <p class="mt-2">Les composants sont la base d'Angular, permettant de structurer l'interface utilisateur.</p>
         </div>
       </div>
-
-      <!-- Question 2 -->
-      <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <i class="bi bi-lightbulb-fill me-2"></i> À quel besoin cette techno répond-elle ?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#angularQuestions">
-          <div class="accordion-body">
-            Angular facilite le développement d'applications web robustes et évolutives, avec une architecture structurée. Il utilise TypeScript pour minimiser les erreurs et améliorer la maintenabilité.
-          </div>
+      <!-- Bloc 2 -->
+      <div class="col-md-4">
+        <div class="concept-block p-4 rounded shadow">
+          <i class="bi bi-filter-circle icon-large"></i>
+          <h3 class="text-primary mt-3">Pipes</h3>
+          <p class="mt-2">Les Pipes transforment et formatent les données affichées dans les templates.</p>
         </div>
       </div>
-
-      <!-- Question 3 -->
-      <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            <i class="bi bi-tools me-2"></i> Comment est-ce qu'on la met en œuvre ?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#angularQuestions">
-          <div class="accordion-body">
-            Installez Angular CLI avec <code>npm install -g &#64;angular/cli</code>, créez un projet avec <code>ng new project-name</code>, puis lancez-le avec <code>ng serve</code>. Utilisez <code>ng generate</code> pour ajouter des composants, services, ou modules.
-          </div>
+      <!-- Bloc 3 -->
+      <div class="col-md-4">
+        <div class="concept-block p-4 rounded shadow">
+          <i class="bi bi-link icon-large"></i>
+          <h3 class="text-primary mt-3">Templates & Data Binding</h3>
+          <p class="mt-2">Lie les données entre la logique de l'application et l'interface utilisateur.</p>
         </div>
       </div>
-
-      <!-- Question 4 -->
-      <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            <i class="bi bi-diagram-3-fill me-2"></i> Comment elle s'intègre dans le paysage du web aujourd'hui ?
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#angularQuestions">
-          <div class="accordion-body">
-            Angular reste un choix populaire pour les applications d'entreprise nécessitant une architecture solide. Il est utilisé aux côtés de frameworks comme React et Vue.js.
-          </div>
+      <!-- Bloc 4 -->
+      <div class="col-md-4">
+        <div class="concept-block p-4 rounded shadow">
+          <i class="bi bi-layers icon-large"></i>
+          <h3 class="text-primary mt-3">Directives</h3>
+          <p class="mt-2">Les directives manipulent le DOM pour créer des comportements dynamiques.</p>
         </div>
       </div>
-
-      <!-- Question 5 -->
-      <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            <i class="bi bi-info-circle-fill me-2"></i> Qu'est-ce que vous auriez aimé savoir avant de démarrer ?
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#angularQuestions">
-          <div class="accordion-body">
-            La courbe d'apprentissage d'Angular peut être raide pour les débutants. Comprendre les concepts de composants, services et modules est essentiel.
-          </div>
+      <!-- Bloc 5 -->
+      <div class="col-md-4">
+        <div class="concept-block p-4 rounded shadow">
+          <i class="bi bi-diagram-3 icon-large"></i>
+          <h3 class="text-primary mt-3">Modules</h3>
+          <p class="mt-2">Organisez votre application en parties modulaires pour une meilleure maintenabilité.</p>
+        </div>
+      </div>
+      <!-- Bloc 6 -->
+      <div class="col-md-4">
+        <div class="concept-block p-4 rounded shadow">
+          <i class="bi bi-plug icon-large"></i>
+          <h3 class="text-primary mt-3">Services</h3>
+          <p class="mt-2">Centralisez la logique métier et partagez des données grâce à l'injection de dépendances.</p>
+        </div>
+      </div>
+      <!-- Bloc 7 -->
+      <div class="col-md-12">
+        <div class="concept-block p-4 rounded shadow">
+          <i class="bi bi-arrows-move icon-large"></i>
+          <h3 class="text-primary mt-3">Routing</h3>
+          <p class="mt-2">Naviguez entre les pages et sections de votre application en toute simplicité.</p>
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Quiz Section -->
+  <div class="section-black text-center text-white p-5 mt-5">
+    <h2 class="display-5">Testez vos connaissances</h2>
+    <p class="mt-3">Mettez vos compétences Angular à l'épreuve avec notre quiz interactif !</p>
+    <button class="btn btn-outline-light mt-3 px-4 py-2">Commencer le Quiz</button>
   </div>
   `,
   styleUrls: ['./home.component.css']

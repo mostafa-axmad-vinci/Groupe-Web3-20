@@ -1,20 +1,11 @@
-/* Global Styles */
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  overflow-x: hidden;
-}
-
 /* Navbar */
 .navbar {
-  background: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(90deg, #1e3a8a, #2563eb, #3b82f6);
   backdrop-filter: blur(10px);
   padding: 1rem 2rem;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  z-index: 1030;
 }
 
 .navbar-brand {
@@ -24,71 +15,81 @@ body {
 }
 
 .navbar-brand .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar-brand .logo:hover {
   transform: scale(1.2);
-  box-shadow: 0 0 15px rgba(255, 126, 95, 0.8);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.8); /* Lumière turquoise */
 }
 
+/* Club 4 en doré */
 .navbar-brand .text-gradient {
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: linear-gradient(to right, #f7b42c, #fceabb); /* Dégradé doré */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Légère ombre pour le contraste */
 }
 
+/* Navbar Links */
 .navbar-nav .nav-link {
   font-size: 1.1rem;
   padding: 0.5rem 1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ff7e5f;
+  color: #3b82f6;
   transform: translateY(-3px);
 }
 
 .navbar-nav .nav-link.active {
-  color: #ff7e5f;
+  color: #3b82f6;
   font-weight: bold;
-  border-bottom: 2px solid #ff7e5f;
+  border-bottom: 2px solid #3b82f6;
 }
 
-/* Buttons */
-.btn-glow {
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar Buttons */
+.navbar-buttons .btn-glow {
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+  border-radius: 30px;
+  background-color: #2563eb;
+  color: white;
 }
 
-.btn-glow:hover {
+.navbar-buttons .btn-glow:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.8);
+  background-color: #1e3a8a;
 }
 
-.btn-outline-light {
+.navbar-buttons .btn-outline-light {
   color: rgba(255, 255, 255, 0.8);
   border-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
 }
 
-.btn-outline-light:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.btn-primary {
-  background-color: #ff7e5f;
-  border-color: #ff7e5f;
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background-color: #feb47b;
-  border-color: #feb47b;
-  box-shadow: 0 0 20px rgba(255, 126, 95, 0.8);
+.navbar-buttons .btn-outline-light:hover {
+  background-color: #3b82f6;
+  color: white;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
 }
 
 /* Sticky Navbar */
@@ -98,50 +99,25 @@ body {
   z-index: 1020;
 }
 
-/* Main Content */
-main {
-  animation: fadeIn 0.8s ease-in-out;
-  margin-top: 2rem;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-  .navbar-brand {
-    font-size: 1rem;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 0.9rem;
-    padding: 0.5rem;
-  }
-
   .navbar-brand .logo {
     width: 40px;
     height: 40px;
   }
-}
 
+  .navbar-brand .text-gradient {
+    font-size: 1.5rem;
+  }
 
-/* Logo carré */
-.logo {
-  border-radius: 8px; /* Ajoute des coins légèrement arrondis */
-  border: 2px solid #fff; /* Ajoute une bordure blanche élégante */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
 
-.logo:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(255, 126, 95, 0.8); /* Lumière autour du logo */
+  .navbar-buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

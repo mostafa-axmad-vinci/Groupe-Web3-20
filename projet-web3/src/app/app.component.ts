@@ -10,8 +10,8 @@ import { RouterModule } from '@angular/router';
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow sticky-top">
       <div class="container-fluid">
         <a routerLink="/" class="navbar-brand d-flex align-items-center">
-        <img src="../assets/logo.jpg" alt="logo" class="logo me-2" width="50" height="50">
-        <span class="fs-3 fw-bold text-gradient">Club 4</span>
+          <img src="../assets/logo.jpg" alt="logo" class="logo me-2">
+          <span class="fs-3 fw-bold text-gradient">Club 4</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,3 +48,4 @@ import { RouterModule } from '@angular/router';
 export class AppComponent {
   title = 'projet-web3';
 }
+
