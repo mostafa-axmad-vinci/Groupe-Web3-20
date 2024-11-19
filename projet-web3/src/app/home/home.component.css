@@ -1,0 +1,64 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom right, #121212, #1d1d1d);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: fadeInDown 1s ease;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  animation: fadeInUp 1s ease;
+}
+
+/* FAQ Section */
+.container {
+  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-item {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accordion-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-button:hover {
+  background-color: #feb47b;
+  color: white;
+}
+
+.accordion-body {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  font-size: 1rem;
+}
